@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="radius" format="dimension" />
+    <attr name="topLeftRadius" format="dimension" />
+    <attr name="topRightRadius" format="dimension" />
+    <attr name="bottomLeftRadius" format="dimension" />
+    <attr name="bottomRightRadius" format="dimension" />
+    <attr name="strokeColor" format="color" />
+    <attr name="strokeWidth" format="dimension"/>
+    <!-- 阴影半径（dp、px等等）-->
+    <attr name="shadowRadius" format="dimension" />
+    <!-- 阴影颜色（资源ID\颜色值）-->
+    <attr name="shadowColor" format="reference|color"/>
+    <!-- 阴影偏移（dp、px等等）-->
+    <attr name="shadow_x" format="dimension" />
+    <!-- 阴影偏移（dp、px等等）-->
+    <attr name="shadow_y" format="dimension" />
+
+    <declare-styleable name="Strong">
+        <!-- 阴影半径 -->
+        <attr name="shadowElevation" format="dimension"/>
+        <!-- 阴影颜色 -->
+        <attr name="shadowColor"/>
+        <!-- 阴影画笔填充颜色 -->
+        <attr name="shadowBackground" format="reference|color"/>
+        <!-- 是否剪切阴影画笔填充区域 -->
+        <attr name="clipShadowPath" format="boolean"/>
+        <!-- 阴影偏移（dp、px等等）-->
+        <attr name="shadow_x"/>
+        <!-- 阴影偏移（dp、px等等）-->
+        <attr name="shadow_y"/>
+        <!-- 阴影圆角 -->
+        <attr name="shadowRadius"/>
+        <attr name="shadowRadiusTopLeft" format="dimension"/>
+        <attr name="shadowRadiusTopRight" format="dimension"/>
+        <attr name="shadowRadiusBottomLeft" format="dimension"/>
+        <attr name="shadowRadiusBottomRight" format="dimension"/>
+        <!-- 渐变圆角 -->
+        <attr name="gradientRadius" format="dimension"/>
+        <attr name="gradientRadiusTopLeft" format="dimension"/>
+        <attr name="gradientRadiusTopRight" format="dimension"/>
+        <attr name="gradientRadiusBottomLeft" format="dimension"/>
+        <attr name="gradientRadiusBottomRight" format="dimension"/>
+        <!-- 渐变颜色-开始 -->
+        <attr name="gradientColorStart" format="reference|color"/>
+        <!-- 渐变颜色-结束 -->
+        <attr name="gradientColorEnd" format="reference|color"/>
+        <!-- 渐变边框宽度 -->
+        <attr name="gradientStrokeWidth" format="dimension"/>
+        <!-- 渐变边框颜色 -->
+        <attr name="gradientStrokeColor" format="reference|color"/>
+        <!-- 渐变边框虚线宽度 -->
+        <attr name="gradientStrokeDashWidth" format="dimension"/>
+        <!-- 渐变边框虚线间隙 -->
+        <attr name="gradientStrokeDashGap" format="dimension"/>
+    </declare-styleable>
+
+    <declare-styleable name="RatingBarView">
+        <!-- 星星宽度 -->
+        <attr name="starWidth" format="dimension" />
+        <!-- 星星高度 -->
+        <attr name="starHeight" format="dimension" />
+        <!-- 星星数量 -->
+        <attr name="starNum" format="integer" />
+        <!-- 星星当前进度 -->
+        <attr name="starRating" format="dimension" />
+        <!-- 星星之间的空隙 -->
+        <attr name="starSpace" format="dimension" />
+        <!--进度方式，整星还是半星-->
+        <attr name="starStep">
+            <enum name="Full" value="1" />
+            <enum name="Half" value="2" />
+        </attr>
+        <!-- 没选中 -->
+        <attr name="starDrawableEmpty" format="reference|color"/>
+        <!-- 选中，进度是半星 -->
+        <attr name="starDrawableHalf" format="reference|color"/>
+        <!-- 选中，进度是整星 -->
+        <attr name="starDrawableFill" format="reference|color"/>
+    </declare-styleable>
+</resources>
