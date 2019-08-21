@@ -7,7 +7,7 @@
     tools:context=".MainActivity"
     android:orientation="vertical"
     android:gravity="center">
-    
+
     <com.wudengwei.ratingbarview.RatingBarView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -17,6 +17,8 @@
         app:starSpace="3dp"
         app:starDrawableEmpty="@drawable/ic_star_empty"
         app:starDrawableFill="@drawable/ic_star_fill"
+        app:starDrawableHalf="@drawable/ic_star_hlef"
+        app:starStep="Half"
         android:paddingLeft="15dp"
         android:paddingRight="15dp"
         android:paddingTop="3dp"
